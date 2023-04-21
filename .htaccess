@@ -1,0 +1,47 @@
+# "RewriteEngine on" added for pi
+RewriteEngine on
+
+ErrorDocument 404 /404.php
+ErrorDocument 400 /404.php
+ErrorDocument 401 /404.php
+ErrorDocument 403 /404.php
+ErrorDocument 500 /404.php
+Redirect /booking.html /booking.php
+Redirect /booking.html/ /booking.php
+Redirect /about /newsroom
+Redirect /study /parlour
+Redirect /parlour/ /parlour
+Redirect /the-parlour /parlour
+Redirect /the-parlour/ /parlour
+Redirect /corporate /lava
+Redirect /EarthAscendant /earth-ascendant
+Redirect /news /newsroom
+Redirect /RebelScum /rebelscum
+Redirect /Wordscanhurt /wordscanhurt
+Redirect /WirelessDispatch /wirelessdispatch
+Redirect /shop	/store
+Redirect /ShadowSpire /shadowspire.html
+Redirect /Shadowspire /shadowspire.html
+Redirect /shadowspire /shadowspire.html
+Redirect /blog /blog.html
+Redirect /Blog /blog.html
+Redirect /GameDiego /gamediego.html
+Redirect /gamediego /gamediego.html
+Redirect /Gamediego /gamediego.html
+Redirect /game-diego /gamediego.html
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+
+
+<FilesMatch "\.(jpg|jpeg|png|gif|)$">
+Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+
+<FilesMatch "\.(js|css)$">
+Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+
+<Files "wsh_saved_enteries.txt">
+Order Allow,Deny
+Deny from all
+</Files>
