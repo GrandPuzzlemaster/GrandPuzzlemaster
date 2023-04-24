@@ -1,11 +1,11 @@
 # "RewriteEngine on" added for pi
 RewriteEngine on
 
-ErrorDocument 404 /404.php
-ErrorDocument 400 /404.php
-ErrorDocument 401 /404.php
-ErrorDocument 403 /404.php
-ErrorDocument 500 /404.php
+ErrorDocument 404 /404.html
+ErrorDocument 401 /404.html
+ErrorDocument 400 /404.html
+ErrorDocument 403 /404.html
+ErrorDocument 500 /404.html
 Redirect /booking.html /booking.php
 Redirect /booking.html/ /booking.php
 Redirect /about /newsroom
