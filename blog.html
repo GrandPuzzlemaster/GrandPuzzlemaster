@@ -1,243 +1,299 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-    <head> 
-        <meta charset="utf-8"/> 
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/> 
-        <meta name="description" content=""/> 
-        <meta name="author" content=""/> 
-        <title>Puzzalarium Blog</title>         
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/> 
-        <!-- Font Awesome icons (free version)-->         
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>         
-        <!-- Google fonts-->         
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/> 
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/> 
-        <!-- Core theme CSS (includes Bootstrap)-->         
-        <link href="css/styles.css" rel="stylesheet"/> 
-        <!-- MailerLite Universal -->         
-        <script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '618087');
-</script>         
-        <!-- End MailerLite Universal -->         
-    </head>     
-    <body> 
-        <!-- Navigation-->         
-        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav"> 
-            <div class="container px-4 px-lg-5"> <a class="navbar-brand" href="index.html">Puzzalarium</a> 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> 
-                    Menu<i class="fas fa-bars"></i> 
-                </button>                 
-                <div class="collapse navbar-collapse" id="navbarResponsive"> 
-                    <ul class="navbar-nav ms-auto py-4 py-lg-0"> 
-                        <li class="nav-item"> <a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a> 
-                        </li>                         
-                    </ul>                     
-                </div>                 
-            </div>             
-        </nav>         
-        <!-- Page Header-->         
-        <header class="masthead" style="background-image: url('blogAssets/assets/img/home-bg.jpg')"> 
-            <div class="container position-relative px-4 px-lg-5"> 
-                <div class="row gx-4 gx-lg-5 justify-content-center"> 
-                    <div class="col-md-10 col-lg-8 col-xl-7"> 
-                        <div class="site-heading"> 
-                            <h1>Dearest Patrons,</h1> <span class="subheading"></span> 
-                        </div>                         
-                    </div>                     
-                </div>                 
-            </div>             
-        </header>         
-        <!-- Main Content-->         
-        <div class="container px-4 px-lg-5"> 
-            <div class="row gx-4 gx-lg-5 justify-content-center"> 
-                <div class="container"> 
-                    <div class="row"> 
-                        <div class="col-md-6"> 
-                            <h2>I'm Stevenson Streeper, the Director.</h2> 
-                            <h3>I'm a game designer trying to make a Theme Park,</h3> 
-                            <h5>and I am constantly working on something.</h5> 
-                            <p>If you haven't been keeping up with us for years it's hard to keep track of what exactly it
-                            is.</p> 
-                            <p>So here's a short summary of what's happened up to this point:</p> 
-                        </div>                         
-                        <div class="col-md-6"> 
-                            <img class="img-fluid" src="img/stevenson_director_2019.jpg"> 
-                        </div>                         
-                    </div>                     
-                    <div class="row"> 
-</div>                     
-                    <ul id="highlightLink"> 
-                        <li>In 2014 I opened the first Escape Room in San Diego. It went well!</li>                         
-                        <li>In 2016 we opened a new facility in Hillcrest. We tried to make a 9-player spaceship simulator.
-                            That didn't go so well.
-</li>                         
-                        <li>We panicked and made <a href="/lava">The Floor is Lava</a> instead. It was a good game! We ran
-                            that for about 3 years and installed copies in Las Vegas and Europe.
-                        </li>                         
-                        <li>In 2017 we opened <a href="/parlour">The Parlour</a>. An escape room that was secretly a
-                            thematic resource management game in disguise. It won awards!
-                        </li>                         
-                        <li>In 2018 we ran a Murder Mystery MegaGame called Hear/Say at the Lafayette hotel. It was one of our best-attended events up to that point, so we ran another Hear/Say that fall that included a dinner! The reviews were that the game and murder scene were cool, but that we should never serve dinner again. And I couldn't agree more.</li>                         
-                        <li>In 2020 COVID hit and we had to close. We also <a href="https://www.youtube.com/watch?v=wYRt_W10CE0">made a special miniature escape room for
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Puzzalarium Blog</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+        rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- MailerLite Universal -->
+    <script>
+        (function (w, d, e, u, f, l, n) {
+            w[f] = w[f] || function () {
+                (w[f].q = w[f].q || [])
+                    .push(arguments);
+            }, l = d.createElement(e), l.async = 1, l.src = u,
+                n = d.getElementsByTagName(e)[0], n.parentNode.insertBefore(l, n);
+        })
+            (window, document, 'script', 'https://assets.mailerlite.com/js/universal.js', 'ml');
+        ml('account', '618087');
+    </script>
+    <!-- End MailerLite Universal -->
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <div class="container px-4 px-lg-5"> <a class="navbar-brand" href="index.html">Puzzalarium</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> Menu<i
+                    class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                    <li class="nav-item"> <a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Header-->
+    <header class="masthead" style="background-image: url('blogAssets/assets/img/home-bg.jpg')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="site-heading">
+                        <h1>Dearest Patrons,</h1> <span class="subheading"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main Content-->
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>I'm Stevenson Streeper, the Director.</h2>
+                        <h3>I'm a game designer trying to make a Theme Park,</h3>
+                        <h5>and I am constantly working on something.</h5>
+                        <p>If you haven't been keeping up with us for years it's hard to keep track of what exactly it
+                            is.</p>
+                        <p>So here's a short summary of what's happened up to this point:</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="img/stevenson_director_2019.jpg">
+                    </div>
+                </div>
+                <div class="row">
+                </div>
+                <ul id="highlightLink">
+                    <li>In 2014 I opened the first Escape Room in San Diego. It went well!</li>
+                    <li>In 2016 we opened a new facility in Hillcrest. We tried to make a 9-player spaceship simulator.
+                        That didn't go so well. </li>
+                    <li>We panicked and made <a href="/lava">The Floor is Lava</a> instead. It was a good game! We ran
+                        that for about 3 years and installed copies in Las Vegas and Europe. </li>
+                    <li>In 2017 we opened <a href="/parlour">The Parlour</a>. An escape room that was secretly a
+                        thematic resource management game in disguise. It won awards! </li>
+                    <li>In 2018 we ran a Murder Mystery MegaGame called Hear/Say at the Lafayette hotel. It was one of
+                        our best-attended events up to that point, so we ran another Hear/Say that fall that included a
+                        dinner! The reviews were that the game and murder scene were cool, but that we should never
+                        serve dinner again. And I couldn't agree more.</li>
+                    <li>In 2020 COVID hit and we had to close. We also <a
+                            href="https://www.youtube.com/watch?v=wYRt_W10CE0">made a special miniature escape room for
                             a streamer</a>. Thanks to the donations of that streamer's audience, the donations of my
-                            patrons, and my sale of my boardgame, I was able to <a href="https://www.youtube.com/watch?v=pLwy9LVRLbw">buy a laser cutter.</a> 
-                        </li>                         
-                        <li>In 2021 we began working on Electra City: A high-tech RPG Theme Park prototype. We worked on
-                            that for a good chunk of the year while also <a href="https://puzzalarium.com/sun-expires">running a MegaGame</a> in downtown San Diego.
-                        </li>                         
-                        <li>In 2022 we ran an adult egg hunt called <a href="https://thepuzzalarium.ticketspice.com/the-great-easterween-egg-hunt">Easterween</a> 
-                            which was dumb and fun.
-                        </li>                         
-                        <li>I also at this point realized that Electra City would be too much software to code all by
-                            myself, and I needed a lower-tech way of testing whether the game was fun before investing in a
-                            software framework. So I created <a href="shadowspire.html">Shadowspire</a> and brought an early
-                            version of it to GenCon 2022 for playtesting.
-                        </li>                         
-                        <li>The test revealed a fundamental flaw with the core game design conceit, forcing me back to the
-                            drawing board, wherein I briefly considered making a Mini-golf course to fix it.
-</li>                         
-                        <li>As finances got tighter, we began work on a video game compilation of party games for people to
-                            play together called <a href="https://store.steampowered.com/app/2198690/PartySparkers/">PartySparkers</a>. 
-                        </li>                         
-                        <li>We launched a new boardgame convention called GameDiego in Spring 2023, and another GameDiego for summer, including an all-new murder mystery game called Hear/Say 4: Final Curtain.</li>                         
-                    </ul>                     
-                </div>                 
-                <div class="container" id="newsletter"> 
-                    <h2>Avoid having to come back here every month or so: Subscribe to the newsletter!</h2> 
-                </div>                 
-                <div class="ml-embedded" data-form="rf2jqd"></div>                 
-                <div class="col-md-10 col-lg-8 col-xl-7"> 
-                    <!-- Divider-->                     
-                    <hr class="my-4"/> 
-                    <!-- Post preview-->                     
-                    <div class="post-preview"> <a href="https://emails.puzzalarium.com/d0b1t7q0k0"> <h2 class="post-title">Come murder each other, dang it</h2> <h3 class="post-subtitle">It's not like you have any other legal way to take out your aggression</h3> </a> 
-                        <p class="post-meta"> 
-                        Posted by <a href="#!">Stevenson</a> 
-                        on May 22, 2023 </p> 
-                    </div>                     
-                    <!-- Divider-->                     
-                    <hr class="my-4"/> 
-                    <!-- Post preview-->                     
-                    <div class="post-preview"> <a href="https://emails.puzzalarium.com/v0c6z1e0k9"> <h2 class="post-title">Game Diego Summer and Hear/Say 4 Announcement</h2> <h3 class="post-subtitle">Because why not do it again but even bigger?</h3> </a> 
-                        <p class="post-meta"> 
-                        Posted by <a href="#!">Stevenson</a> 
-                        on April 25, 2023 </p> 
-                    </div>                     
-                    <!-- Divider-->                     
-                    <hr class="my-4"/> 
-                    <!-- Post preview-->                     
-                    <div class="post-preview"> <a href="https://emails.puzzalarium.com/h0m4t1c2x7"> <h2 class="post-title">ElectraCity Progress Pics and YouTube Shorts</h2> <h3 class="post-subtitle">I also show more about the Theme Park Idea</h3> </a> 
-                        <p class="post-meta"> 
-                        Posted by <a href="#!">Stevenson</a> 
-                        on April 2, 2023 </p> 
-                    </div>                     
-                    <!-- Divider-->                     
-                    <hr class="my-4"/> 
-                    <!-- Post preview-->                     
-                    <div class="post-preview"> <a href="https://emails.puzzalarium.com/b3c3h8p5z7"> <h2 class="post-title">Workshop Reveal and GamerCon Announce</h2> <h3 class="post-subtitle">In which I show off pretty workshop shots.</h3> </a> 
-                        <p class="post-meta"> 
-                        Posted by <a href="#!">Stevenson</a> 
-                        on March 13, 2023 </p> 
-                    </div>                     
-                    <!-- Divider-->                     
-                    <hr class="my-4"/> 
-                    <!-- Post preview-->                     
-                    <div class="post-preview"> <a href="https://emails.puzzalarium.com/v7y9n7m5v9"> <h2 class="post-title">Game Diego Spring Kicker</h2> <h3 class="post-subtitle">Because some people need to be reminded that they can buy tickets to fun things.</h3> </a> 
-                        <p class="post-meta"> 
-                        Posted by <a href="#!">Stevenson</a> 
-                        on February 20, 2023 </p> 
-                    </div>                     
-                    <!-- Divider-->                     
-                    <hr class="my-4"/> 
-                    <!-- Post preview-->                     
-                    <div class="post-preview"> <a href="https://emails.puzzalarium.com/k2y7k2w8u8"> <h2 class="post-title">Game Diego and Usual Game Night</h2> <h3 class="post-subtitle">In which I introduce a monthly-ish game night</h3> </a> 
-                        <p class="post-meta"> 
-                        Posted by <a href="#!">Stevenson</a> 
-                        on January 23, 2023 </p> 
-                    </div>                     
-                    <!-- Divider-->                     
-                    <hr class="my-4"/> 
-                    <!-- Post preview-->                     
-                    <div class="post-preview"> <a href="https://emails.puzzalarium.com/i9b7c9h7b1"> <h2 class="post-title">Announcing our very first Game Diego Convention!</h2> <h3 class="post-subtitle">Also we violently overthrow the leadership of a Meetup Group with blood and sixty bucks.</h3> </a> 
-                        <p class="post-meta"> 
-                        Posted by <a href="#!">Stevenson</a> 
-                        on January 13, 2023 </p> 
-                    </div>                     
-                    <hr class="my-4"/> 
-                    <!-- Post preview-->                     
-                    <div class="post-preview"> <a href="https://emails.puzzalarium.com/a6p1b0q3r7"> <h2 class="post-title">Mini Updates and Upcoming Events</h2> <h3 class="post-subtitle">Also meet some of the characters in PartySparkers</h3> </a> 
-                        <p class="post-meta"> 
-                        Posted by <a href="#!">Stevenson</a> 
-                        on December 13, 2022 </p> 
-                    </div>                     
-                    <!-- Divider-->                     
-                    <div class="post-preview"> <a href="https://emails.puzzalarium.com/c6t5k1g2t4"> <h2 class="post-title">Our game is now on Steam! ....Already?!</h2> <h3 class="post-subtitle">And why our game trailer is bad</h3> </a> 
-                        <p class="post-meta"> 
-                        Posted by <a href="#!">Stevenson</a> 
-                        on November 4, 2022 </p> 
-                    </div>                     
-                    <!-- Divider-->                     
-                    <hr class="my-4"/> 
-                    <!-- Post preview-->                     
-                    <div class="post-preview"> <a href="https://emails.puzzalarium.com/k8q6e0c2s3"> <h2 class="post-title">Announcing our video game PartySparkers!</h2> <h3 class="post-subtitle">Also maybe MiniGolf isn't such a good idea</h3> </a> 
-                        <p class="post-meta"> 
-                        Posted by <a href="#!">Stevenson</a> 
-                        on October 18, 2022 </p> 
-                    </div>                     
-                    <!-- Divider-->                     
-                    <hr class="my-4"/> 
-                    <!-- Post preview-->                     
-                    <div class="post-preview"> <a href="https://emails.puzzalarium.com/u2r7u9x0k1"> <h2 class="post-title">MiniGolf!</h2> <h3 class="post-subtitle">The Theme Park's First Attraction</h3> </a> 
-                        <p class="post-meta"> 
-                        Posted by <a href="#!">Stevenson</a> 
-                        on August 24, 2022 </p> 
-                    </div>                     
-                    <!-- Divider-->                     
-                    <hr class="my-4"/> 
-                    <!-- Post preview-->                     
-                    <div class="post-preview"> <a href="https://emails.puzzalarium.com/w2j9r3x4z5"> <h2 class="post-title">First Shadowspire Playtests</h2> <h3 class="post-subtitle">Super-Early-Very-Not-Ready Version of Shadowspire at EsCon Saturday! </h3> </a> 
-                        <p class="post-meta"> 
-                        Posted by <a href="#!">Stevenson</a> 
-                        on July 7, 2022 </p> 
-                    </div>                     
-                    <!-- Divider-->                     
-                    <hr class="my-4"/> 
-                    <!-- Post preview-->                     
-                    <div class="post-preview"> <a href="https://emails.puzzalarium.com/l9y7m3v6j7"> <h2 class="post-title">Shadowspire Announcement</h2> <h3 class="post-subtitle">Congratulations to those who survived the Email purge.</h3> </a> 
-                        <p class="post-meta"> 
-                        Posted by <a href="#!">Stevenson</a> 
-                        on June 21, 2022 </p> 
-                    </div>                     
-                    <!-- Divider-->                     
-                    <hr class="my-4"/> 
-                    <!-- Pager-->                     
-                    <div class="d-flex  mb-4"> <a class="btn btn-primary text-uppercase" href="index.html">Back to
-                        Puzzalarium →</a> 
-                    </div>                     
-                </div>                 
-            </div>             
-        </div>         
-        <!-- Footer-->         
-        <footer class="border-top"> 
-            <div class="container px-4 px-lg-5"> 
-                <div class="row gx-4 gx-lg-5 justify-content-center"> 
-                    <div class="col-md-10 col-lg-8 col-xl-7"> 
-                        <ul class="list-inline text-center"> 
-                            <li class="list-inline-item"> <a class="mx-2" href="https://discord.gg/G3WHQMq"><i class="fab fa-discord"></i></a> 
-                            </li>                             
-                        </ul>                         
-                        <div class="small text-center text-muted fst-italic">Copyright &copy; Puzzalarium 2024</div>                         
-                    </div>                     
-                </div>                 
-            </div>             
-        </footer>         
-        <!-- Bootstrap core JS-->         
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>         
-        <!-- Core theme JS-->         
-        <script src="blogAssets/js/scripts.js"></script>         
-    </body>     
+                        patrons, and my sale of my boardgame, I was able to <a
+                            href="https://www.youtube.com/watch?v=pLwy9LVRLbw">buy a laser cutter.</a>
+                    </li>
+                    <li>In 2021 we began working on Electra City: A high-tech RPG Theme Park prototype. We worked on
+                        that for a good chunk of the year while also <a
+                            href="https://puzzalarium.com/sun-expires">running a MegaGame</a> in downtown San Diego.
+                    </li>
+                    <li>In 2022 we ran an adult egg hunt called <a
+                            href="https://thepuzzalarium.ticketspice.com/the-great-easterween-egg-hunt">Easterween</a>
+                        which was dumb and fun. </li>
+                    <li>I also at this point realized that Electra City would be too much software to code all by
+                        myself, and I needed a lower-tech way of testing whether the game was fun before investing in a
+                        software framework. So I created <a href="shadowspire.html">Shadowspire</a> and brought an early
+                        version of it to GenCon 2022 for playtesting. </li>
+                    <li>The test revealed a fundamental flaw with the core game design conceit, forcing me back to the
+                        drawing board, wherein I briefly considered making a Mini-golf course to fix it. </li>
+                    <li>As finances got tighter, we began work on a video game compilation of party games for people to
+                        play together called <a
+                            href="https://store.steampowered.com/app/2198690/PartySparkers/">PartySparkers</a>. </li>
+                    <li>We launched a new boardgame convention called GameDiego in Spring 2023, and another GameDiego
+                        for summer, including an all-new murder mystery game called Hear/Say 4: Final Curtain.</li>
+                    <li>In Fall of 2023, we made a gigantic 400sqft board game system for a convention, and it was wild!
+                        It then took me 5 months to write the very detailed blog post about it, which you absolutely
+                        should read about <a href="https://sparkforge.games/blog">here!</a> (For real: I think you'd
+                        like it.)</li>
+                    <li>Hear/Say 4 was also picked up for GenCon 2024, for two sessions which both sold out.</li>
+                </ul>
+                <em>Last updated in June of 2024.</em>
+            </div>
+            <div class="container" id="newsletter">
+                <h2>Avoid having to come back here every month or so: Subscribe to the newsletter!</h2>
+            </div>
+            <div class="ml-embedded" data-form="rf2jqd"></div>
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <hr class="my-4" />
+                <!-- Post preview-->
+                <div class="post-preview"> <a
+                        href="https://mail.puzzalarium.com/preview/618087/emails/118831726861485276">
+                        <h2 class="post-title">I made a blog post!</h2>
+                        <h3 class="post-subtitle">okay i get it it doesn't sound like much but bro you don't understand
+                            it's a doozy fr</h3>
+                    </a>
+                    <p class="post-meta"> Posted by <a href="#!">Stevenson</a> on April 4, 2024 </p>
+                </div>
+                <hr class="my-4" />
+                <!-- Post preview-->
+                <div class="post-preview"> <a
+                        href="https://mail.puzzalarium.com/preview/618087/emails/110318679439181727">
+                        <h2 class=" post-title">Game Diego Spring 2024!</h2>
+                        <h3 class="post-subtitle">Spring has Sprung, games to be won. </h3>
+                    </a>
+                    <p class="post-meta"> Posted by <a href="#!">Stevenson</a> on January 18, 2024 </p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-4" />
+                <!-- Post preview-->
+                <div class="post-preview"> <a href="https://emails.puzzalarium.com/d0b1t7q0k0">
+                        <h2 class="post-title">Come murder each other, dang it</h2>
+                        <h3 class="post-subtitle">It's not like you have any other legal way to take out your
+                            aggression... </h3>
+                    </a>
+                    <p class="post-meta"> Posted by <a href="#!">Stevenson</a> on May 22, 2023 </p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-4" />
+                <!-- Post preview-->
+                <div class="post-preview"> <a href="https://emails.puzzalarium.com/v0c6z1e0k9">
+                        <h2 class="post-title">Game Diego Summer and Hear/Say 4 Announcement</h2>
+                        <h3 class="post-subtitle">Because why not do it again but even bigger?</h3>
+                    </a>
+                    <p class="post-meta"> Posted by <a href="#!">Stevenson</a> on April 25, 2023 </p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-4" />
+                <!-- Post preview-->
+                <div class="post-preview"> <a href="https://emails.puzzalarium.com/h0m4t1c2x7">
+                        <h2 class="post-title">ElectraCity Progress Pics and YouTube Shorts</h2>
+                        <h3 class="post-subtitle">I also show more about the Theme Park Idea</h3>
+                    </a>
+                    <p class="post-meta"> Posted by <a href="#!">Stevenson</a> on April 2, 2023 </p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-4" />
+                <!-- Post preview-->
+                <div class="post-preview"> <a href="https://emails.puzzalarium.com/b3c3h8p5z7">
+                        <h2 class="post-title">Workshop Reveal and GamerCon Announce</h2>
+                        <h3 class="post-subtitle">In which I show off pretty workshop shots.</h3>
+                    </a>
+                    <p class="post-meta"> Posted by <a href="#!">Stevenson</a> on March 13, 2023 </p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-4" />
+                <!-- Post preview-->
+                <div class="post-preview"> <a href="https://emails.puzzalarium.com/v7y9n7m5v9">
+                        <h2 class="post-title">Game Diego Spring Kicker</h2>
+                        <h3 class="post-subtitle">Because some people need to be reminded that they can buy tickets to
+                            fun things.</h3>
+                    </a>
+                    <p class="post-meta"> Posted by <a href="#!">Stevenson</a> on February 20, 2023 </p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-4" />
+                <!-- Post preview-->
+                <div class="post-preview"> <a href="https://emails.puzzalarium.com/k2y7k2w8u8">
+                        <h2 class="post-title">Game Diego and Usual Game Night</h2>
+                        <h3 class="post-subtitle">In which I introduce a monthly-ish game night</h3>
+                    </a>
+                    <p class="post-meta"> Posted by <a href="#!">Stevenson</a> on January 23, 2023 </p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-4" />
+                <!-- Post preview-->
+                <div class="post-preview"> <a href="https://emails.puzzalarium.com/i9b7c9h7b1">
+                        <h2 class="post-title">Announcing our very first Game Diego Convention!</h2>
+                        <h3 class="post-subtitle">Also we violently overthrow the leadership of a Meetup Group with
+                            blood and sixty bucks.</h3>
+                    </a>
+                    <p class="post-meta"> Posted by <a href="#!">Stevenson</a> on January 13, 2023 </p>
+                </div>
+                <hr class="my-4" />
+                <!-- Post preview-->
+                <div class="post-preview"> <a href="https://emails.puzzalarium.com/a6p1b0q3r7">
+                        <h2 class="post-title">Mini Updates and Upcoming Events</h2>
+                        <h3 class="post-subtitle">Also meet some of the characters in PartySparkers</h3>
+                    </a>
+                    <p class="post-meta"> Posted by <a href="#!">Stevenson</a> on December 13, 2022 </p>
+                </div>
+                <!-- Divider-->
+                <div class="post-preview"> <a href="https://emails.puzzalarium.com/c6t5k1g2t4">
+                        <h2 class="post-title">Our game is now on Steam! ....Already?!</h2>
+                        <h3 class="post-subtitle">And why our game trailer is bad</h3>
+                    </a>
+                    <p class="post-meta"> Posted by <a href="#!">Stevenson</a> on November 4, 2022 </p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-4" />
+                <!-- Post preview-->
+                <div class="post-preview"> <a href="https://emails.puzzalarium.com/k8q6e0c2s3">
+                        <h2 class="post-title">Announcing our video game PartySparkers!</h2>
+                        <h3 class="post-subtitle">Also maybe MiniGolf isn't such a good idea</h3>
+                    </a>
+                    <p class="post-meta"> Posted by <a href="#!">Stevenson</a> on October 18, 2022 </p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-4" />
+                <!-- Post preview-->
+                <div class="post-preview"> <a href="https://emails.puzzalarium.com/u2r7u9x0k1">
+                        <h2 class="post-title">MiniGolf!</h2>
+                        <h3 class="post-subtitle">The Theme Park's First Attraction</h3>
+                    </a>
+                    <p class="post-meta"> Posted by <a href="#!">Stevenson</a> on August 24, 2022 </p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-4" />
+                <!-- Post preview-->
+                <div class="post-preview"> <a href="https://emails.puzzalarium.com/w2j9r3x4z5">
+                        <h2 class="post-title">First Shadowspire Playtests</h2>
+                        <h3 class="post-subtitle">Super-Early-Very-Not-Ready Version of Shadowspire at EsCon Saturday!
+                        </h3>
+                    </a>
+                    <p class="post-meta"> Posted by <a href="#!">Stevenson</a> on July 7, 2022 </p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-4" />
+                <!-- Post preview-->
+                <div class="post-preview"> <a href="https://emails.puzzalarium.com/l9y7m3v6j7">
+                        <h2 class="post-title">Shadowspire Announcement</h2>
+                        <h3 class="post-subtitle">Congratulations to those who survived the Email purge.</h3>
+                    </a>
+                    <p class="post-meta"> Posted by <a href="#!">Stevenson</a> on June 21, 2022 </p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-4" />
+                <!-- Pager-->
+                <div class="d-flex  mb-4"> <a class="btn btn-primary text-uppercase" href="index.html">Back to
+                        Puzzalarium →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer-->
+    <footer class="border-top">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item"> <a class="mx-2" href="https://discord.gg/G3WHQMq"><i
+                                    class="fab fa-discord"></i></a>
+                        </li>
+                    </ul>
+                    <div class="small text-center text-muted fst-italic">Copyright &copy; Puzzalarium 2024</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="blogAssets/js/scripts.js"></script>
+</body>
+
 </html>
