@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>x0popup JavaScript Library Examples</title>
+<style>
+html,* { margin:0; padding:0;}
+body { font-family:'Open Sans'; background-color:#34495E;}
+.btn { background-color:#1ABC9C; border:none; border-bottom:3px solid #16A085; color:#fff; padding:10px 20px; font-size:120%; margin:10px; cursor:pointer;}
+.container { margin:70px auto; text-align: center;}
+h1 { color:#fff;}
+</style>
+<link href="dist/x0popup.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+<h1>x0popup JavaScript Library Examples</h1>
+<button id="demo-1" class="btn">Alert Popup</button>
+<button id="demo-2" class="btn">Confirm Popup</button>
+<button id="demo-3" class="btn">Prompt Popup</button>
+<button id="demo-4" class="btn">Auto close</button>
+<button id="demo-5" class="btn">Async Operation</button>
+<button id="demo-6" class="btn">Advanced Input</button>
+</div>
+<script src="dist/x0popup.min.js"></script>
+<script>
+document.getElementById("demo-1").addEventListener("click", function(e) {
+	x0p('Message', 'Hello world!', 'info');
+	e.preventDefault();
+});
+
+document.getElementById("demo-2").addEventListener("click", function(e) {
+	x0p('Confirmation', 'Are you sure?', 'warning');
+});
+
+document.getElementById("demo-3").addEventListener("click", function(e) {
+	x0p('Enter Your Name', null, 'input',
+    function(button, text) {
+        if(button == 'info') {
+            x0p('Congratulations', 
+                'Your name is ' + text + '!', 
+                'ok', false);
+        }
+        if(button == 'cancel') {
+            x0p('Canceled', 
+                'You canceled input.',
+                'error', false);
+        }
+    });
+});
+
+document.getElementById("demo-4").addEventListener("click", function(e) {
+	x0p({
+    title: 'Auto Close',
+    text: 'This popup will auto close in 3 seconds.',
+    animationType: 'slideDown',
+    icon: 'info',
+    buttons: [],
+    autoClose: 3000
+});
+	e.preventDefault();
+});
+
+document.getElementById("demo-5").addEventListener("click", function(e) {
+	x0p({
+    title: 'Async Operation',
+    text: 'Try to do some operation.',
+    icon: 'info',
+    animationType: 'fadeIn',
+    buttons: [
+        {
+            type: 'cancel'
+        },
+        {
+            type: 'info',
+            text: 'Do It!',
+            showLoading: true
+        }
+    ]
+}, function(button) {
+    if(button == 'info') {
+        // Simulate Delay
+        setTimeout(function() {
+            x0p('Done', null, 'ok', false);
+        }, 1500);
+    }
+});
+	e.preventDefault();
+});
+
+document.getElementById("demo-6").addEventListener("click", function(e) {
+	x0p({
+    title: 'Number Check',
+    type: 'warning',
+    inputType: 'text',
+    inputPlaceholder: 'Number Only',
+    inputColor: '#F29F3F',
+    inputValidator: function(button, value) {
+        if(value == '' || isNaN(value))
+            return 'Not a number!';
+        return null;
+    }
+}, function(button, text) {
+    if(button == 'warning') {
+        x0p('Congratulations', 
+            'Your number is ' + text + '!', 
+            'ok', false);
+    }
+});
+	e.preventDefault();
+});
+</script>
+</body>
+</html>

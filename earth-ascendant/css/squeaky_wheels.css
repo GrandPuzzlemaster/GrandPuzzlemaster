@@ -1,0 +1,91 @@
+
+.ua-ios-7 .navigation .logo img {
+  height: 4.1em; /* reduces the logo WIDTH slightly on old iphones */
+}
+
+.ua-ios-8 .navigation .logo img {
+  margin-top: 15px;
+  height: 4.9em;
+  max-height: 90px;
+}
+
+/* haven't tested this one fully yet */
+.ua-webkit-601 .navigation .logo img { /* iPhone 5 iOS 9.1.0 beta 2  Safari */
+  margin-top: 15px;
+  height: 4.9em;
+  max-height: 90px;
+}
+
+/* ---------------- iPhone 6 --------------- */
+/* Res: 375x667 | 21.81% of all site traffic */
+/* ----------------------------------------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+/*
+  .navigation .logo img {
+  margin-top: 15px;
+	height: 4.9em;
+	max-height: 90px;
+  }
+*/
+
+  .mobile-nav-button {
+  	top: 58%;
+  }
+
+  .home-extra-note p {
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+}
+
+/* ----------- Galaxy S5 ----------- */
+/* 360x640 | 12.94%                  */
+/* --------------------------------- */
+
+
+/* Portrait */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) {
+
+  .navigation .logo img {
+  	margin-top: 14px;
+  	margin-left: -1px;
+	height: 4.75em;
+	max-height: 90px;
+  }
+
+  .mobile-nav-button {
+  	top: 58%;
+  }
+
+}
+
+
+
+
+/* trying to hit the Nexus mobile phones */
+.ua-mobile-android .navigation .logo img {
+  margin-top: 14px;
+  margin-left: -1px;
+  height: 5.3em;
+  max-height: 90px;
+}
+
+.ua-mobile-android .mobile-nav-button {
+  top: 58%;
+}
+
+.ua-mobile-android .home-extra-note p {
+  font-weight: 300;
+  font-size: 20px;
+}
+/* end nexus hits */

@@ -1,0 +1,1 @@
+images/portfolio/masonry was moved to images/newsroom
